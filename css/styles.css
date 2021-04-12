@@ -11,8 +11,28 @@
   --main-font: 'Roboto', sans-serif;
   --logo-font: 'Raleway', sans-serif;
 }
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
 
 body {
+  margin: 0;
   background-color: var(--premari-white-color);
   color: var(--primari-text-color);
   font-family: var(--main-font);
@@ -28,7 +48,13 @@ body {
 }
 
 .list {
+  padding-left: 0;
+  margin: 0;
   list-style: none;
+}
+
+img {
+  display: block;
 }
 
 .site-nav .link:hover,
@@ -38,6 +64,14 @@ body {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
+}
+
+.conteiner {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  background-color: tomato;
 }
 
 /* logo */
@@ -80,18 +114,31 @@ body {
   background-color: var(--dark-bg-color);
 }
 
+.hero {
+  width: 1600px;
+  text-align: center;
+}
+
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--premari-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  background-color: orange;
 }
 
 /* button */
 .button {
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  border: 1px solid transparent;
+  text-align: center;
   color: var(--premari-white-color);
   background-color: var(--accent-color);
   font-weight: 700;
@@ -101,7 +148,12 @@ body {
 }
 
 /* features */
+
+section {
+  background-color: limegreen;
+}
 .features-title {
+  margin-bottom: 10px;
   color: var(--subtitle-text-color);
   font-size: 14px;
   line-height: 1.14;
@@ -122,12 +174,21 @@ body {
   text-align: center;
 }
 
+.work-title {
+  margin-bottom: 50px;
+}
+
 /* team */
 .team {
   background-color: var(--secondary-bg-color);
 }
 
+.team-title {
+  background-color: teal;
+}
+
 .team-subtitle {
+  margin-bottom: 10px;
   color: var(--subtitle-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -151,6 +212,7 @@ body {
 }
 
 .footer-text {
+  margin-bottom: 10px;
   color: var(--premari-white-color);
   font-size: 14px;
   line-height: 1.7;

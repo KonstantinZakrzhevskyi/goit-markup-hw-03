@@ -247,7 +247,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
-  margin-bottom: calc(-30px);
 }
 
 .team-item {
